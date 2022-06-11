@@ -11,6 +11,9 @@ body {
 #posts {
     width: 400px;
     /* border: 2px solid red; */
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 #posts>div {
