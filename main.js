@@ -2,6 +2,7 @@ let form = document.getElementById('form');
 let input = document.getElementById('input');
 let msg = document.getElementById('msg');
 let posts = document.getElementById('posts');
+let showDate = document.getElementById('showDate');
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -49,3 +50,6 @@ let editPost = (e) =>{
     input.value = e.parentElement.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
 }
+
+let currentDate = new Date();
+showDate.innerText=currentDate.toLocaleDateString();

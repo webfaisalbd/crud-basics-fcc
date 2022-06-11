@@ -10,7 +10,7 @@ body {
 
 #posts {
     width: 400px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 #posts>div {
@@ -30,4 +30,8 @@ i {
 
 #msg {
     color: red;
+}
+
+#showDate {
+    color: green;
 }
