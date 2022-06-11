@@ -30,10 +30,18 @@ let createPost = () =>{
     posts.innerHTML += `<div>
     <p>${data.text}</p>
     <span class="options">
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash-alt"></i>
+        <iclass="fas fa-edit"></i>
+        <i onClick='deletePost(this)' class="fas fa-trash-alt"></i>
     </span>
 </div>`;
 
+
+// reset the form
 input.value = '';
 }
+
+
+let deletePost = (e) => {
+    e.parentElement.parentElement.remove();
+}
+
